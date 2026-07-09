@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>勿忘nb</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+            overflow: hidden;
+        }
+
+        .text {
+            font-size: clamp(3rem, 12vw, 8rem);
+            font-weight: bold;
+            color: transparent;
+            background: linear-gradient(90deg, #e94560, #f5a623, #50fa7b, #8be9fd, #ff79c6);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: gradient 3s ease infinite, float 3s ease-in-out infinite;
+            letter-spacing: 0.1em;
+            text-shadow: 0 0 40px rgba(233, 69, 96, 0.3);
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-20px) scale(1.03); }
+        }
+    </style>
+</head>
+<body>
+    <div class="text">勿忘nb</div>
+</body>
+</html>
